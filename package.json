@@ -5,7 +5,8 @@
     "@types/react": "^17.0.0",
     "next": "^10.0.4",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.2"
   },
   "devDependencies": {
     "ts-standard": "^10.0.0",
