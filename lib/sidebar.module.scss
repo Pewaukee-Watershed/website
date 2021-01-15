@@ -1,7 +1,17 @@
+$gray: #343434;
+
 .sidebar {
-  background-color: gray;
+  background-color: $gray;
+  color: white;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+
+  a {
+    text-decoration: inherit;
+    color: inherit;
+  }
 }
