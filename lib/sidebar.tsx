@@ -1,4 +1,3 @@
-import Link from 'next/head'
 import styles from './sidebar.module.scss'
 
 const Sidebar = (): JSX.Element => (
