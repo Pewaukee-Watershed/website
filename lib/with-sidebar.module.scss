@@ -1,0 +1,19 @@
+.everything {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+
+  .sidebar {
+    flex: 0 0 auto;
+    height: 100%;
+  }
+
+  .content {
+    flex: 1 0 auto;
+    height: 100%;
+  }
+}
