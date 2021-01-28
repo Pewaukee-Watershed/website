@@ -16,21 +16,20 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-$gray: #343434;
+import styles from './footer.module.scss'
 
-.sidebar {
-  background-color: $gray;
-  color: white;
-  width: 90px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px 0 10px;
+const Footer = (): JSX.Element => (
+  <div className={ styles.footer }>
+    <span>
+      Copyright (c) 2021 Pewaukee Watershed 
+      | 
+      <a      
+        href="https://github.com/Pewaukee-Watershed/pewaukee-watershed.github.io/"
+      >
+        GitHub
+      </a>
+    </span>
+  </div>
+)
 
-  a {
-    text-decoration: inherit;
-    color: inherit;
-  }
-}
+export default Footer

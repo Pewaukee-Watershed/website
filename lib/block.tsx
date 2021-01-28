@@ -16,21 +16,24 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-$gray: #343434;
+import styles from './block.module.scss'
 
-.sidebar {
-  background-color: $gray;
-  color: white;
-  width: 90px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px 0 10px;
-
-  a {
-    text-decoration: inherit;
-    color: inherit;
-  }
+interface Props {
+  side: 'Left' | 'Right'
+  children?: JSX.Element
 }
+const Block = (props: Props): JSX.Element => (
+  <div 
+    className={(
+      Math.random() < 0.25 
+        ? styles.red 
+        : Math.random() < 0.5 
+          ? styles.yellow 
+          : Math.random() < 0.75 
+            ? styles.green 
+            : styles.blue
+    ) + ' ' + styles.block + ' ' + styles[`block${props.side}`] }>{ props.children}
+  </div>
+)
+
+export default Block
