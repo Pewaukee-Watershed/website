@@ -15,26 +15,3 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
-import Sidebar from './sidebar'
-import Footer from './footer'
-import styles from './with-sidebar.module.scss'
-
-interface Props {
-  children: JSX.Element
-} 
-const WithSidebar = (props: Props): JSX.Element => (
-  <div className={styles.everything}>
-    <div className={styles.sidebar}>
-      <Sidebar />
-    </div>
-    <div className={styles.content}>
-      <div className={ styles.maincontent }>
-        { props.children }
-      </div>
-      <Footer />
-    </div>
-  </div>
-)
-
-export default WithSidebar

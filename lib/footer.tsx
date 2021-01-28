@@ -1,6 +1,6 @@
 /*
  *  This file is part of the Pewaukee Watershed official website.
- *  Copyright (C) 2021  Pewaukee Watershed
+ *  Copyright (C) 2020-2021  Pewaukee Watershed
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ import styles from './footer.module.scss'
 const Footer = (): JSX.Element => (
   <div className={ styles.footer }>
     <span>
-      Copyright (c) 2021 Pewaukee Watershed 
+      Copyright © 2021 Pewaukee Watershed 
       | 
       <a      
         href="https://github.com/Pewaukee-Watershed/pewaukee-watershed.github.io/"
