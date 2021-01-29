@@ -16,7 +16,8 @@ $border-red: #FE4A49;
   
   font-size: 19px;
 
-  min-height: 250px;
+  height: 250px;
+  max-height: 50vh;
 
   transition: all 0.5s;
   will-change: font-size;
@@ -25,11 +26,13 @@ $border-red: #FE4A49;
   font-size: 23px;
 }
 
-.blockLeft {
+.block.left {
   grid-column: left / right;
+  margin: 15px 10px 0 15px;
 }
-.blockRight {
+.block.right {
   grid-column: right;
+  margin: 15px 15px 0 10px;
 }
 
 .green {

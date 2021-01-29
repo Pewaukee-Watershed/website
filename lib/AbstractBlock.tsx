@@ -16,20 +16,13 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import styles from './footer.module.scss'
+export default abstract class AbstractBlock {
 
-const Footer = (): JSX.Element => (
-  <div className={ styles.footer }>
-    <span>
-      Copyright © 2021 Pewaukee Watershed 
-      | 
-      <a      
-        href="https://github.com/Pewaukee-Watershed/pewaukee-watershed.github.io/"
-      >
-        GitHub
-      </a>
-    </span>
-  </div>
-)
+  getColor: Function = (i): string => !(i % 8) ? 'yellow' : !(i % 8 - 1) ? 'green' : !(i % 8 - 2) ? 'red' : !(i % 8 - 3) ? 'blue' : !(i % 8 - 4) ? 'green' : !(i % 8 - 5) ? 'yellow' : !(i % 8 - 6) ? 'blue' : 'red'
 
-export default Footer
+
+  getSide: Function = (i): string => (i & 1) ? 'right' : 'left'
+
+  element: Function
+
+}

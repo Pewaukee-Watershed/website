@@ -16,24 +16,20 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import styles from './block.module.scss'
+import styles from './footer.module.scss'
 
-interface Props {
-  side: 'Left' | 'Right'
-  children?: JSX.Element
-}
-const Block = (props: Props): JSX.Element => (
-  <div 
-    className={(
-      Math.random() < 0.25 
-        ? styles.red 
-        : Math.random() < 0.5 
-          ? styles.yellow 
-          : Math.random() < 0.75 
-            ? styles.green 
-            : styles.blue
-    ) + ' ' + styles.block + ' ' + styles[`block${props.side}`] }>{ props.children}
+const Footer = (): JSX.Element => (
+  <div className={ styles.footer }>
+    <span>
+      Copyright © 2020-2021 Pewaukee Watershed 
+      | 
+      <a      
+        href="https://github.com/Pewaukee-Watershed/pewaukee-watershed.github.io/"
+      >
+        GitHub
+      </a>
+    </span>
   </div>
 )
 
-export default Block
+export default Footer

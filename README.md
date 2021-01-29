@@ -32,26 +32,6 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 The official website is hosted on [Vercel](https://vercel.com/).
@@ -63,24 +43,26 @@ The official website is hosted on [Vercel](https://vercel.com/).
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Pewaukee-Watershed/website/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Pewaukee-Watershed/website/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Secnyt** - *Initial work* - [secnyt](https://github.com/secnyt)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **KhajasJS** - *Initial work* - [KhajasJS](https://github.com/KhajasJS)
+
+See also the list of [contributors](https://github.com/Pewaukee-Watershed/website/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License v3.0 - see [the License (COPYING.md)](https://github.com/Pewaukee-Watershed/website/blob/main/COPYING.md) for details.
+
+Note: *The use of date ranges are used in this project's Copyright notices (e.g. ['2014-2016'] rather than ['2014', '2015', '2016'])*
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Everyone working on the Pewaukee Watershed project
