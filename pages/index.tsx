@@ -32,15 +32,13 @@ const App = (props): JSX.Element => (
     </Head>
     <WithSidebar>
       <ContentGrid>
-        { props.blocks.map((v: AbstractBlock, i: number) => new LinkBlock(v.name, `/data/${ v.page }`).element(i)) }
+        { props.blocks.map((v: any, i: number) => new LinkBlock(v.name, `/data/${ v.file.split('.')[0] }`).element(i)) }
       </ContentGrid>
     </WithSidebar>
   </>
 )
 
 export const getStaticProps = async () => {
-  console.log(await getData())
-
   return {
     props: {
       blocks: await getData()
