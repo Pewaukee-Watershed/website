@@ -21,7 +21,7 @@ import Footer from './footer'
 import styles from './with-sidebar.module.scss'
 
 interface Props {
-  children: JSX.Element
+  children: JSX.Element | JSX.Element[]
 } 
 const WithSidebar = (props: Props): JSX.Element => (
   <div className={styles.everything}>
