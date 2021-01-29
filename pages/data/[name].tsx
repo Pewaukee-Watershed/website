@@ -2,13 +2,19 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import getData from '../../lib/getData'
 import { readFile } from 'jsonfile'
 import path from 'path'
+import Head from 'next/head'
+import WithSidebar from '../../lib/elements/with-sidebar'
 
 const Main = (props): JSX.Element => {
   return (
     <>
-      <h1>Data</h1>
-      <h2>Name of data: {props.name}</h2>
-      <a href='/'>Home</a>
+      <Head>
+        <title>{props.name} {'\u2022'} Data {'\u2022'} Pewaukee Watershed</title>
+      </Head>
+      <WithSidebar>
+        <h1>Data</h1>
+        <h2>Name of data: {props.name}</h2>
+      </WithSidebar>
     </>
   )
 }
