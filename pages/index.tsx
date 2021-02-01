@@ -19,10 +19,8 @@
 import Head from 'next/head'
 import WithSidebar from '../lib/elements/with-sidebar'
 import ContentGrid from '../lib/elements/content-grid'
-import Block from '../lib/elements/block'
 import styles from './index.module.scss'
-import AbstractBlock from '../lib/AbstractBlock'
-import LinkBlock from '../lib/LinkBlock'
+import LinkBlock from '../components/LinkBlock'
 import getData from '../lib/getData'
 
 const App = (props): JSX.Element => (
@@ -32,7 +30,13 @@ const App = (props): JSX.Element => (
     </Head>
     <WithSidebar>
       <ContentGrid>
-        { props.blocks.map((v: any, i: number) => new LinkBlock(v.name, `/data/${ v.file.split('.')[0] }`).element(i)) }
+        { props.blocks.map((v: any, i: number) => (
+          <LinkBlock 
+            text={v.name}
+            link={`/data/${ v.file.split('.')[0] }`}
+            key={i}
+          />
+        )) }
       </ContentGrid>
     </WithSidebar>
   </>
