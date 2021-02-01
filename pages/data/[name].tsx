@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import getData from '../../lib/getData'
+import getArticles from '../../lib/getArticles'
 import { readFile } from 'jsonfile'
 import path from 'path'
 import Head from 'next/head'
@@ -9,11 +10,11 @@ const Main = (props): JSX.Element => {
   return (
     <>
       <Head>
-        <title>{props.name} {'\u2022'} Data {'\u2022'} Pewaukee Watershed</title>
+        <title>{ props.name } { '\u2022' } Data { '\u2022' } Pewaukee Watershed</title>
       </Head>
       <WithSidebar>
         <h1>Data</h1>
-        <h2>Name of data: {props.name}</h2>
+        <h2>Name of data: { props.name }</h2>
       </WithSidebar>
     </>
   )
