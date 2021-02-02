@@ -17,10 +17,11 @@
  */
 
 import styles from './Sidebar.module.scss'
+import Link from 'next/link'
 
 const Sidebar = (): JSX.Element => (
   <div className={ styles.sidebar }>
-    <a href='/'>Home</a>
+    <Link href='/'>Home</Link>
   </div>
 )
 
