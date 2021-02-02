@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import styles from './sidebar.module.scss'
+import styles from './Sidebar.module.scss'
 
 const Sidebar = (): JSX.Element => (
   <div className={ styles.sidebar }>

@@ -4,7 +4,7 @@ import getArticles from '../../lib/getArticles'
 import { readFile } from 'jsonfile'
 import path from 'path'
 import Head from 'next/head'
-import WithSidebar from '../../lib/elements/with-sidebar'
+import WithSidebar from '../../components/WithSidebar'
 
 const Main = (props): JSX.Element => {
   return (

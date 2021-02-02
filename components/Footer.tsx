@@ -16,15 +16,15 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import styles from './footer.module.scss'
+import styles from './Footer.module.scss'
 
 const Footer = (): JSX.Element => (
   <div className={ styles.footer }>
     <span>
       Copyright © 2020-2021 Pewaukee Watershed 
       | 
-      <a      
-        href="https://github.com/Pewaukee-Watershed/pewaukee-watershed.github.io/"
+      <a    
+        href="https://github.com/Pewaukee-Watershed/website/"
       >
         GitHub
       </a>
