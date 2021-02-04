@@ -5,9 +5,13 @@ import { readFile } from 'jsonfile'
 import path from 'path'
 import Head from 'next/head'
 import WithSidebar from '../../components/WithSidebar'
+/* import DataChart from '../../components/DataChart' */
+import * as ChartJs from 'react-chartjs-2'
+import {useEffect} from 'react'
 
 const Main = (props): JSX.Element => {
-  return (
+  // TODO: Data with custom chart type
+    return (
     <>
       <Head>
         <title>{ props.name } { '\u2022' } Data { '\u2022' } Pewaukee Watershed</title>
@@ -15,6 +19,9 @@ const Main = (props): JSX.Element => {
       <WithSidebar>
         <h1>Data</h1>
         <h2>Name of data: { props.name }</h2>
+        <ChartJs.Bar
+          {...props.chart}
+        />
       </WithSidebar>
     </>
   )
