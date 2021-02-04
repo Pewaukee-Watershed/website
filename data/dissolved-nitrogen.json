@@ -1,12 +1,12 @@
 {
   "name": "Dissolved Nitroge",
   "chart": {
+    "type": "bar",
     "data": {
       "labels": [
         "cool stuff",
         "more"
       ],
-      "type": "bar",
       "datasets": [
         {
           "label": "cool day",
