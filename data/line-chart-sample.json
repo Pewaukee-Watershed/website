@@ -1,0 +1,44 @@
+{
+  "name": "Sampe (Line Chart)",
+  "chart": {
+    "type": "line",
+    "data": {
+      "labels": [
+        "cool stuff",
+        "more",
+        "yes",
+        "abc",
+        "data"
+      ],
+      "datasets": [
+        {
+          "label": "cool day",
+          "data": [
+            20,
+            30,
+            10,
+            50,
+            42
+          ],
+          "backgroundColor": [
+            "#db484882"
+          ],
+          "borderColor": [
+            "#4848db82"
+          ]
+        }
+      ]
+    },
+    "options": {
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

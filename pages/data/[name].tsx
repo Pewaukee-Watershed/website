@@ -3,6 +3,7 @@ import getData from '../../lib/getData'
 import getArticles from '../../lib/getArticles'
 import { readFile } from 'jsonfile'
 import path from 'path'
+import styles from './data.module.scss'
 import Head from 'next/head'
 import WithSidebar from '../../components/WithSidebar'
 import Chart from '../../components/Chart'
@@ -15,13 +16,15 @@ const Main = (props): JSX.Element => {
         <title>{props.name} {'\u2022'} Data {'\u2022'} Pewaukee Watershed</title>
       </Head>
       <WithSidebar>
-        <h1>Data</h1>
-        <h2>Name of data: {props.name}</h2>
-        {props.chart !== undefined && (
-          <Chart
-            {...props.chart}
-          />
-        )}
+        <div className={ styles.content }>
+          <h1>Data</h1>
+          <h2>Name of data: {props.name}</h2>
+          {props.chart !== undefined && (
+            <Chart
+              {...props.chart}
+            />
+          )}
+        </div>
       </WithSidebar>
     </>
   )

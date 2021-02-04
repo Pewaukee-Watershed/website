@@ -1,7 +1,7 @@
 {
-  "name": "Dissolved Nitroge",
+  "name": "Kule Stuffe (Pie Chart)",
   "chart": {
-    "type": "bar",
+    "type": "pie",
     "data": {
       "labels": [
         "cool stuff",
@@ -20,17 +20,6 @@
           ]
         }
       ]
-    },
-    "options": {
-      "scales": {
-        "yAxes": [
-          {
-            "ticks": {
-              "beginAtZero": true
-            }
-          }
-        ]
-      }
     }
   }
 }

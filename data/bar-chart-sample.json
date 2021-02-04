@@ -1,0 +1,48 @@
+{
+  "name": "Dissolved Nitroge (Bar Chart)",
+  "chart": {
+    "type": "bar",
+    "data": {
+      "labels": [
+        "cool stuff",
+        "more",
+        "other",
+        "stuff",
+        "idk",
+        "ok"
+      ],
+      "datasets": [
+        {
+          "label": "cool day",
+          "data": [
+            20,
+            30,
+            40,
+            10,
+            25,
+            60
+          ],
+          "backgroundColor": [
+            "#ff638833",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 99, 132, 0.2)",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 99, 132, 0.2)",
+            "rgba(54, 162, 235, 0.2)"
+          ]
+        }
+      ]
+    },
+    "options": {
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

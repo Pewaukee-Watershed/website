@@ -1,8 +1,9 @@
-import { Bar, Pie } from 'react-chartjs-2'
+import { Bar, Pie, Line } from 'react-chartjs-2'
 
 const typeMapping = {
   bar: Bar,
-  pie: Pie
+  pie: Pie,
+  line: Line
 }
 
 const DataChart = (props): JSX.Element => {
