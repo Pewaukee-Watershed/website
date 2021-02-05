@@ -2,5 +2,5 @@
   "name": "Cool Article",
   "author": "Cool Person",
   "date-written": "Cool Day",
-  "content": "Cool ***Markdown*** Content\n# header\n## smaller header\n### smaller header\n#### smaller header\n##### smaller header\n###### smaller header\n[Link](/articles/sample-article)\n ~~strikethrough~~ __underline__ *italicize* **bold**"
+  "content": "Cool ***Markdown*** Content\n# header\n## smaller header\n### smaller header\n#### smaller header\n##### smaller header\n###### smaller header\n[Link](/articles/sample-article)\n ~~strikethrough~~ *italicize* **bold**"
 }
