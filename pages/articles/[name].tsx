@@ -5,7 +5,8 @@ import path from 'path'
 import styles from './article.module.scss'
 import Head from 'next/head'
 import WithSidebar from '../../components/WithSidebar'
-import Chart from '../../components/Chart'
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
 
 const Main = (props): JSX.Element => {
   // TODO: Data with custom chart type
@@ -16,9 +17,9 @@ const Main = (props): JSX.Element => {
       </Head>
       <WithSidebar>
         <div className={ styles.content }>
-          <h1>Article</h1>
-          <h2>Name: {props.name}</h2>
-          <p>Content: {props.content}</p>
+          <p className={styles.title}>{props.name}</p>
+          <p>By <span className={styles.author}>{props.author}</span></p>
+          <ReactMarkdown className={styles.text} plugins={[gfm]}>{props.content}</ReactMarkdown>
         </div>
       </WithSidebar>
     </>
