@@ -9,9 +9,9 @@ const App = (props): JSX.Element => (
       <title>Pewaukee Watershed</title>
     </Head>
     <WithSidebar>
-      404 not found. <b />
+      <>404 not found. <b />
       This page does not exist. <b />
-      <Link href="/">Go back</Link>
+      <Link href="/">Go back</Link></>
     </WithSidebar>
   </>
 )
