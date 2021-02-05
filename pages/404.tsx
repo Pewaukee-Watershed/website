@@ -1,17 +1,22 @@
 import Head from 'next/head'
 import WithSidebar from '../components/WithSidebar'
-import styles from './index.module.scss'
+import Link from 'next/link'
+import styles from './404.module.scss'
 import getData from '../lib/getData'
 
 const App = (props): JSX.Element => (
-  <>
+  <div>
     <Head>
       <title>Pewaukee Watershed</title>
     </Head>
     <WithSidebar>
-      <>404 not found. <b />
-      This page does not exist. <b />
-      <Link href="/">Go back</Link></>
+      <div className={styles.content}>
+        404 not found. <br />
+        This page does not exist. <br />
+        <Link href="/">Go back</Link>
+      </div>
     </WithSidebar>
-  </>
+  </div>
 )
+
+export default App
