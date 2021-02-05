@@ -17,11 +17,11 @@
  */
 
 import Head from 'next/head'
-import WithSidebar from '../components/WithSidebar'
-import ContentGrid from '../lib/elements/content-grid'
-import styles from './index.module.scss'
-import LinkBlock from '../components/LinkBlock'
-import getData from '../lib/getData'
+import WithSidebar from '../../components/WithSidebar'
+import ContentGrid from '../../lib/elements/content-grid'
+import styles from '../index.module.scss'
+import LinkBlock from '../../components/LinkBlock'
+import getData from '../../lib/getData'
 
 const App = (props): JSX.Element => (
   <>
@@ -30,7 +30,13 @@ const App = (props): JSX.Element => (
     </Head>
     <WithSidebar>
       <ContentGrid>
-        <LinkBlock link="/data" text="Data"/>
+        { props.blocks.map((v: any, i: number) => (
+          <LinkBlock 
+            text={v.name}
+            link={`/data/${ v.file.split('.')[0] }`}
+            key={i}
+          />
+        )) }
       </ContentGrid>
     </WithSidebar>
   </>
@@ -38,7 +44,9 @@ const App = (props): JSX.Element => (
 
 export const getStaticProps = async () => {
   return {
-    props: {}
+    props: {
+      blocks: await getData()
+    }
   }
 }
 

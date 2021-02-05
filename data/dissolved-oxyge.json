@@ -1,15 +1,14 @@
 {
-  "name": "Dissolved Nitroge (Bar Chart)",
+  "name": "Dissolved Oxyge",
   "chart": {
-    "type": "bar",
+    "type": "line",
     "data": {
       "labels": [
         "cool stuff",
         "more",
-        "other",
-        "stuff",
-        "idk",
-        "ok"
+        "yes",
+        "abc",
+        "data"
       ],
       "datasets": [
         {
@@ -17,18 +16,15 @@
           "data": [
             20,
             30,
-            40,
             10,
-            25,
-            60
+            50,
+            42
           ],
           "backgroundColor": [
-            "#ff638833",
-            "#36a2eb33",
-            "#ff638833",
-            "#36a2eb33",
-            "#ff638833",
-            "#36a2eb33"
+            "#db484882"
+          ],
+          "borderColor": [
+            "#4848db82"
           ]
         }
       ]

@@ -22,6 +22,7 @@ import Link from 'next/link'
 const Sidebar = (): JSX.Element => (
   <div className={ styles.sidebar }>
     <Link href='/'>Home</Link>
+    <Link href='/data'>Data</Link>
   </div>
 )
 
