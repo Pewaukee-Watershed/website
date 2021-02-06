@@ -5,20 +5,21 @@
   align-items: center;
 }
 
-.fourohfour {
+.title {
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   font-size: 40px;
 }
 
-.noexisto {
+.sub {
   a {
     text-decoration: none;
     color: #11b3cf;
   }
+  font-size: 18px;
 }
 
-.goback {
+.content {
   a {
     text-decoration: none;
     color: #11b3cf;

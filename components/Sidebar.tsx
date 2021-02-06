@@ -24,6 +24,8 @@ const Sidebar = (): JSX.Element => (
     <Link href='/'>Home</Link>
     <Link href='/data'>Data</Link>
     <Link href='/articles'>Articles</Link>
+    <Link href='/map'>Map</Link>
+    <Link href='/about-us'>About Us</Link>
   </div>
 )
 
