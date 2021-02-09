@@ -7,9 +7,9 @@ import styles from './data.module.scss'
 import Head from 'next/head'
 import WithSidebar from '../../components/WithSidebar'
 import Chart from '../../components/Chart'
+import Link from 'next/link'
 
 const Main = (props): JSX.Element => {
-  // TODO: Data with custom chart type
   return (
     <>
       <Head>
@@ -17,12 +17,17 @@ const Main = (props): JSX.Element => {
       </Head>
       <WithSidebar>
         <div className={ styles.content }>
-          <h1>Data</h1>
+          <h1>Data</h1><a></a>
           <h2>Name of data: {props.name}</h2>
           {props.chart !== undefined && (
             <Chart
               {...props.chart}
             />
+          )}
+          {props.significance !== undefined && (
+            <Link href={props.significance}>
+              Why this matters.
+            </Link>
           )}
         </div>
       </WithSidebar>
