@@ -17,8 +17,7 @@ const Main = (props): JSX.Element => {
       </Head>
       <WithSidebar>
         <div className={ styles.content }>
-          <h1>Data</h1><a></a>
-          <h2>Name of data: {props.name}</h2>
+          <h2>Data: {props.name}</h2>
           {props.chart !== undefined && (
             <Chart
               {...props.chart}
