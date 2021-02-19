@@ -1,0 +1,49 @@
+{
+  "name": "Nitrate",
+  "chart": {
+    "type": "bar",
+    "data": {
+      "labels": [
+        "cool stuff",
+        "more",
+        "other",
+        "stuff",
+        "idk",
+        "ok"
+      ],
+      "datasets": [
+        {
+          "label": "cool day",
+          "data": [
+            20,
+            30,
+            40,
+            10,
+            25,
+            60
+          ],
+          "backgroundColor": [
+            "#ff638833",
+            "#36a2eb33",
+            "#ff638833",
+            "#36a2eb33",
+            "#ff638833",
+            "#36a2eb33"
+          ]
+        }
+      ]
+    },
+    "options": {
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "significance": "/articles/sample-article"
+}

@@ -11,8 +11,10 @@
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
+    "react-flow-renderer": "^8.8.0",
     "react-markdown": "^5.0.3",
     "remark-gfm": "^1.0.0",
+    "remark-sub-super": "^1.0.20",
     "sass": "^1.32.2"
   },
   "devDependencies": {

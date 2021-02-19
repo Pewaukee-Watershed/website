@@ -8,7 +8,7 @@ The official website is hosted on [Vercel](https://vercel.com/) at [https://pewa
 
 ## Built With
 
-* [React](https://reactjs.org/) - The web framework used
+* [React](https://reactjs.org/) - The web library used
 * [Vercel](https://vercel.com/) - The hosting service
 
 ## Contributing

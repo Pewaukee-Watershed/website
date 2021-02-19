@@ -6,6 +6,7 @@ import Head from 'next/head'
 import WithSidebar from '../../components/WithSidebar'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import subSup from 'remark-supersub'
 import parseMd from 'parse-md'
 
 const Main = (props): JSX.Element => {
