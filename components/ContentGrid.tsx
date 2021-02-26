@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import styles from './content-grid.module.scss'
+import styles from './ContentGrid.module.scss'
 
 const ContentGrid = (props): JSX.Element => (
   <div className={ styles.grid }>

@@ -18,7 +18,7 @@
 
 import Head from 'next/head'
 import WithSidebar from '../components/WithSidebar'
-import ContentGrid from '../components/content-grid'
+import ContentGrid from '../components/ContentGrid'
 import styles from './index.module.scss'
 import LinkBlock from '../components/LinkBlock'
 
