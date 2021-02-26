@@ -11,7 +11,7 @@
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
- * 
+ *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
@@ -19,9 +19,9 @@
 import Head from 'next/head'
 import WithSidebar from '../../components/WithSidebar'
 import ContentGrid from '../../components/ContentGrid'
-import styles from '../index.module.scss'
 import LinkBlock from '../../components/LinkBlock'
 import getArticles from '../../lib/getArticles'
+import { GetStaticProps } from 'next'
 
 const App = (props): JSX.Element => (
   <>
@@ -30,19 +30,19 @@ const App = (props): JSX.Element => (
     </Head>
     <WithSidebar>
       <ContentGrid>
-        { props.blocks.map((v: any, i: number) => (
-          <LinkBlock 
+        {props.blocks.map((v: any, i: number) => (
+          <LinkBlock
             text={v.name}
-            link={`/articles/${ v.file.split('.')[0] }`}
+            link={`/articles/${v.file.split('.')[0] as string}`}
             key={i}
           />
-        )) }
+        ))}
       </ContentGrid>
     </WithSidebar>
   </>
 )
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       blocks: await getArticles()

@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import getData from '../../lib/getData'
-import getArticles from '../../lib/getArticles'
 import { readFile } from 'jsonfile'
 import path from 'path'
 import styles from './data.module.scss'
@@ -16,7 +15,7 @@ const Main = (props): JSX.Element => {
         <title>{props.name} {'\u2022'} Data {'\u2022'} Pewaukee Watershed</title>
       </Head>
       <WithSidebar>
-        <div className={ styles.content }>
+        <div className={styles.content}>
           <h2>Data: {props.name}</h2>
           {props.chart !== undefined && (
             <Chart
@@ -46,9 +45,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params: { name } }) => {
+  if (typeof name !== 'string') throw new Error('No name param')
   const dataDir = path.resolve('data')
-  const data = await readFile(path.join(dataDir, `${params.name}.json`))
+  const data = await readFile(path.join(dataDir, `${name}.json`))
   return {
     props: data
   }

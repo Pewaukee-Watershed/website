@@ -11,7 +11,7 @@
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
- * 
+ *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
@@ -19,7 +19,6 @@
 import Head from 'next/head'
 import WithSidebar from '../components/WithSidebar'
 import ContentGrid from '../components/ContentGrid'
-import styles from './index.module.scss'
 import LinkBlock from '../components/LinkBlock'
 
 const App = (props): JSX.Element => (
@@ -29,19 +28,13 @@ const App = (props): JSX.Element => (
     </Head>
     <WithSidebar>
       <ContentGrid>
-        <LinkBlock link="/data" text="Data"/>
-        <LinkBlock link="/articles" text="Articles"/>
-        <LinkBlock link="/map" text="Map"/>
-        <LinkBlock link="/about-us" text="About Us"/>
+        <LinkBlock link='/data' text='Data' />
+        <LinkBlock link='/articles' text='Articles' />
+        <LinkBlock link='/map' text='Map' />
+        <LinkBlock link='/about-us' text='About Us' />
       </ContentGrid>
     </WithSidebar>
   </>
 )
-
-export const getStaticProps = async () => {
-  return {
-    props: {}
-  }
-}
 
 export default App

@@ -6,7 +6,7 @@
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
- * 
+ *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -14,7 +14,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */ 
+ */
 
 import Sidebar from './Sidebar'
 import Footer from './Footer'
@@ -22,7 +22,7 @@ import styles from './WithSidebar.module.scss'
 
 interface Props {
   children: JSX.Element | JSX.Element[]
-} 
+}
 const WithSidebar = (props: Props): JSX.Element => {
   const { children } = props
   return (
@@ -31,8 +31,8 @@ const WithSidebar = (props: Props): JSX.Element => {
         <Sidebar />
       </div>
       <div className={styles.content}>
-        <div className={ styles.maincontent }>
-          { children }
+        <div className={styles.maincontent}>
+          {children}
         </div>
         <Footer />
       </div>
